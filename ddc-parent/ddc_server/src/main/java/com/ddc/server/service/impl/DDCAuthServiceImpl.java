@@ -24,7 +24,7 @@ import java.util.List;
 @Service
 public class DDCAuthServiceImpl extends ServiceImpl<DDCAuthMapper, DDCAuth> implements IDDCAuthService {
     @Resource
-    private DDCAuthMapper authMapper;
+    private DDCAuthMapper authMapppuer;
     @Resource
     private DDCRoleAuthMapper roleAuthMapper;
 
@@ -33,7 +33,7 @@ public class DDCAuthServiceImpl extends ServiceImpl<DDCAuthMapper, DDCAuth> impl
         List<DDCRoleAuth> roleAuths = roleAuthMapper.selectList(new EntityWrapper<DDCRoleAuth>().eq("role_id", roleId));
         List<DDCAuth> auths = new ArrayList<>(10);
         for (DDCRoleAuth roleAuth : roleAuths) {
-            auths.add(authMapper.selectById(roleAuth.getAuthId()));
+            auths.add(authMapppuer.selectById(roleAuth.getAuthId()));
         }
         return auths;
     }

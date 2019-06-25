@@ -44,6 +44,10 @@ public class MyRealm extends AuthorizingRealm {
     /**
      * 只有当需要检测用户权限的时候才会调用此方法，例如checkRole,checkPermission之类的
      */
+    /**
+     * 1.第一个跳转，doGetAuthorizationInfo检查用户名、密码是否匹配。
+     */
+
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
         if (roleService == null) {
@@ -123,7 +127,7 @@ public class MyRealm extends AuthorizingRealm {
         }
 
 
-        // 加密方式;
+        // 加密方式;2.加密，调用pssworddUtils.java生成密钥,
         // 交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配
         String password = admin.getPassword();
         // 秘钥

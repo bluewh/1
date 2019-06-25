@@ -34,6 +34,7 @@ public class LoginController {
     private IDDCAdminService adminService;
 
 
+
     @RequestMapping("/login")
     public String login(HttpServletRequest request, @RequestParam(value = "username",required = false) String username,
                         @RequestParam(value = "password",required =false ) String password,

@@ -44,7 +44,7 @@ public class DDCAdminMapperTest extends BaseTest {
         authMapper.insert(new DDCAuth("活跃用户统计", "SJTJ-HYYH", 1139936539653029890L, 2));
         authMapper.insert(new DDCAuth("浏览记录统计", "SJTJ-LJL", 1139936539653029890L, 2));
         authMapper.insert(new DDCAuth("系统日志", "XTGL-XTRZ", 1139936539791441922L, 2));
-    }
+}
 
     @Test
     public void hello1() {

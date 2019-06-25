@@ -96,8 +96,8 @@
             <dd>
                 <ul>
                     <li><a data-href="article-list.html" data-title="资讯管理" href="javascript:void(0)">资讯管理</a></li>
-                    <li><a data-href="picture-list.html" data-title="图片管理" href="javascript:void(0)">图片管理</a></li>
-                    <li><a data-href="/page/programa" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
+                    <li><a data-href="/page/picture-list" data-title="图片管理" href="javascript:void(3)">图片管理</a></li>
+                    <li><a data-href="article_column.html" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
                     <li><a data-href="article-category.html" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
 
                 </ul>
@@ -125,7 +125,7 @@
                 <ul>
                     <!--<li><a data-href="http://h-ui.duoshuo.com/admin/" data-title="评论列表" href="javascript:;">评论列表</a>-->
                     </li>
-                    <li><a data-href="/page/suggestings" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
+                    <li><a data-href="feedback-list.html" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
                 </ul>
             </dd>
         </dl>
@@ -261,7 +261,7 @@
     /*图片-添加*/
     function picture_add(title, url) {
         var index = layer.open({
-            type: 2,
+            type: 3,
             title: title,
             content: url
         });

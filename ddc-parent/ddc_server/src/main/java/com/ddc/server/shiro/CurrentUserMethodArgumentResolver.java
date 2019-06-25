@@ -16,13 +16,16 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * @author dingpengfei
  * @since 2019-05-09
  */
+
 public class CurrentUserMethodArgumentResolver implements HandlerMethodArgumentResolver {
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
         return parameter.getParameterType().isAssignableFrom(DDCAdmin.class)
                 && parameter.hasParameterAnnotation(CurrentUser.class);
     }
-
+    /*
+     * 3.登录成功后用户信息存储在session中
+     * */
     @Override
     public Object resolveArgument(MethodParameter parameter, ModelAndViewContainer mavContainer, NativeWebRequest webRequest, WebDataBinderFactory binderFactory) throws Exception {
         SimplePrincipalCollection collection = (SimplePrincipalCollection) webRequest.getAttribute("org.apache.shiro.subject.support.DefaultSubjectContext_PRINCIPALS_SESSION_KEY", RequestAttributes.SCOPE_SESSION);

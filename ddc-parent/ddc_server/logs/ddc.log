@@ -1,218 +1,827 @@
-2019-06-21 10:21:02,041 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 50] Starting DDCProgramaMapperTest on SKY-20180807JXC with PID 12840 (started by Administrator in C:\Users\Administrator\Documents\Tencent Files\1748808318\FileRecv\ddc-parent\ddc_server)
-2019-06-21 10:21:02,081 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
-2019-06-21 10:21:02,082 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
-2019-06-21 10:21:08,612 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$4be9aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:08,829 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$25450a76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:08,903 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$b6e7ea3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:08,973 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:08,997 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:10,223 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:10,269 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$a4c557a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:21:17,617 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
-2019-06-21 10:21:19,525 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
-2019-06-21 10:21:19,532 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
-2019-06-21 10:21:19,534 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
-2019-06-21 10:21:21,857 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
-2019-06-21 10:21:22,847 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 59] Started DDCProgramaMapperTest in 22.72 seconds (JVM running for 26.077)
-2019-06-21 10:21:22,873 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
-2019-06-21 10:21:22,874 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
-2019-06-21 10:21:24,390 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:24,881 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目0(String), 文章(String), 0(Long), 1561083684312(Long), 0(Long), 1561083684312(Long)
-2019-06-21 10:21:25,383 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:25,415 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:25,417 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目1(String), 文章(String), 0(Long), 1561083685414(Long), 0(Long), 1561083685414(Long)
-2019-06-21 10:21:25,583 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:25,590 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:25,593 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目2(String), 文章(String), 0(Long), 1561083685587(Long), 0(Long), 1561083685587(Long)
-2019-06-21 10:21:25,666 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:25,672 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:25,675 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目3(String), 文章(String), 0(Long), 1561083685670(Long), 0(Long), 1561083685670(Long)
-2019-06-21 10:21:25,839 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:25,841 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:25,843 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目4(String), 文章(String), 0(Long), 1561083685840(Long), 0(Long), 1561083685840(Long)
-2019-06-21 10:21:26,094 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,104 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:26,108 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目5(String), 文章(String), 0(Long), 1561083686098(Long), 0(Long), 1561083686098(Long)
-2019-06-21 10:21:26,199 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,206 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:26,208 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目6(String), 文章(String), 0(Long), 1561083686203(Long), 0(Long), 1561083686203(Long)
-2019-06-21 10:21:26,355 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,363 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:26,367 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目7(String), 文章(String), 0(Long), 1561083686358(Long), 0(Long), 1561083686358(Long)
-2019-06-21 10:21:26,461 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,468 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:26,473 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目8(String), 文章(String), 0(Long), 1561083686465(Long), 0(Long), 1561083686465(Long)
-2019-06-21 10:21:26,528 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,538 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:26,542 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目9(String), 文章(String), 0(Long), 1561083686534(Long), 0(Long), 1561083686534(Long)
-2019-06-21 10:21:26,913 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,921 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:26,931 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目10(String), 文章(String), 0(Long), 1561083686917(Long), 0(Long), 1561083686917(Long)
-2019-06-21 10:21:26,993 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:26,998 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,000 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目11(String), 文章(String), 0(Long), 1561083686996(Long), 0(Long), 1561083686996(Long)
-2019-06-21 10:21:27,161 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,170 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,173 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目12(String), 文章(String), 0(Long), 1561083687165(Long), 0(Long), 1561083687165(Long)
-2019-06-21 10:21:27,259 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,261 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,262 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目13(String), 文章(String), 0(Long), 1561083687260(Long), 0(Long), 1561083687260(Long)
-2019-06-21 10:21:27,330 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,333 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,333 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目14(String), 文章(String), 0(Long), 1561083687331(Long), 0(Long), 1561083687331(Long)
-2019-06-21 10:21:27,426 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,432 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,434 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目15(String), 文章(String), 0(Long), 1561083687429(Long), 0(Long), 1561083687429(Long)
-2019-06-21 10:21:27,546 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,556 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,561 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目16(String), 文章(String), 0(Long), 1561083687552(Long), 0(Long), 1561083687552(Long)
-2019-06-21 10:21:27,627 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,632 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,634 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目17(String), 文章(String), 0(Long), 1561083687630(Long), 0(Long), 1561083687630(Long)
-2019-06-21 10:21:27,852 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,861 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,865 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目18(String), 文章(String), 0(Long), 1561083687857(Long), 0(Long), 1561083687857(Long)
-2019-06-21 10:21:27,963 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:27,968 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:27,970 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目19(String), 文章(String), 0(Long), 1561083687965(Long), 0(Long), 1561083687965(Long)
-2019-06-21 10:21:28,086 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:28,090 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:28,092 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目20(String), 文章(String), 0(Long), 1561083688088(Long), 0(Long), 1561083688088(Long)
-2019-06-21 10:21:28,174 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:28,176 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:28,177 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目21(String), 文章(String), 0(Long), 1561083688175(Long), 0(Long), 1561083688175(Long)
-2019-06-21 10:21:28,240 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:28,244 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:28,245 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目22(String), 文章(String), 0(Long), 1561083688242(Long), 0(Long), 1561083688242(Long)
-2019-06-21 10:21:28,340 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:28,346 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:28,348 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目23(String), 文章(String), 0(Long), 1561083688344(Long), 0(Long), 1561083688344(Long)
-2019-06-21 10:21:28,425 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:28,430 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:21:28,432 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目24(String), 文章(String), 0(Long), 1561083688428(Long), 0(Long), 1561083688428(Long)
-2019-06-21 10:21:28,502 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 10:21:28,560 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
-2019-06-21 10:21:28,561 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
-2019-06-21 10:21:28,593 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
-2019-06-21 10:24:10,196 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 50] Starting DDCProgramaMapperTest on SKY-20180807JXC with PID 11484 (started by Administrator in C:\Users\Administrator\Documents\Tencent Files\1748808318\FileRecv\ddc-parent\ddc_server)
-2019-06-21 10:24:10,203 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
-2019-06-21 10:24:10,204 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
-2019-06-21 10:54:17,842 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 50] Starting DDCProgramaMapperTest on SKY-20180807JXC with PID 12412 (started by Administrator in C:\Users\Administrator\Documents\Tencent Files\1748808318\FileRecv\ddc-parent\ddc_server)
-2019-06-21 10:54:17,886 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
-2019-06-21 10:54:17,887 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
-2019-06-21 10:54:21,242 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$a3473cdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:21,610 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3cdaca4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:21,718 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$55708c6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:21,766 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:21,795 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:24,176 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:24,230 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$434df9d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 10:54:28,674 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
-2019-06-21 10:54:30,095 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
-2019-06-21 10:54:30,106 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
-2019-06-21 10:54:30,108 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
-2019-06-21 10:54:32,150 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
-2019-06-21 10:54:33,118 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 59] Started DDCProgramaMapperTest in 16.387 seconds (JVM running for 19.864)
-2019-06-21 10:54:33,137 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
-2019-06-21 10:54:33,138 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
-2019-06-21 10:54:34,756 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 10:54:35,373 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目0(String), 文章(String), 0(Long), 1561085674599(Long), 0(Long), 1561085674599(Long)
-2019-06-21 10:54:35,762 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
-2019-06-21 10:54:35,763 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
-2019-06-21 10:54:35,773 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
-2019-06-21 11:00:23,938 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 50] Starting DDCProgramaMapperTest on SKY-20180807JXC with PID 5132 (started by Administrator in C:\Users\Administrator\Documents\Tencent Files\1748808318\FileRecv\ddc-parent\ddc_server)
-2019-06-21 11:00:23,941 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
-2019-06-21 11:00:23,943 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
-2019-06-21 11:00:30,008 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$7c3f22d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:30,226 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cc5929b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:30,315 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$2e687263] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:30,351 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:30,384 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:31,355 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:31,405 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1c45dfcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-21 11:00:33,899 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
-2019-06-21 11:00:35,262 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
-2019-06-21 11:00:35,269 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
-2019-06-21 11:00:35,271 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
-2019-06-21 11:00:36,784 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
-2019-06-21 11:00:37,592 [INFO] [main] com.ddc.server.mapper.DDCProgramaMapperTest [StartupInfoLogger.java : 59] Started DDCProgramaMapperTest in 15.113 seconds (JVM running for 17.582)
-2019-06-21 11:00:37,613 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
-2019-06-21 11:00:37,614 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
-2019-06-21 11:00:38,157 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:38,375 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目0(String), 1(String), 0(Long), 1561086038068(Long), 0(Long), 1561086038068(Long)
-2019-06-21 11:00:38,918 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:38,932 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:38,933 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目1(String), 1(String), 0(Long), 1561086038931(Long), 0(Long), 1561086038931(Long)
-2019-06-21 11:00:39,018 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,022 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,024 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目2(String), 1(String), 0(Long), 1561086039020(Long), 0(Long), 1561086039020(Long)
-2019-06-21 11:00:39,090 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,094 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,097 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目3(String), 1(String), 0(Long), 1561086039092(Long), 0(Long), 1561086039092(Long)
-2019-06-21 11:00:39,195 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,203 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,205 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目4(String), 1(String), 0(Long), 1561086039199(Long), 0(Long), 1561086039199(Long)
-2019-06-21 11:00:39,267 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,276 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,278 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目5(String), 1(String), 0(Long), 1561086039271(Long), 0(Long), 1561086039271(Long)
-2019-06-21 11:00:39,378 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,384 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,386 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目6(String), 1(String), 0(Long), 1561086039382(Long), 0(Long), 1561086039382(Long)
-2019-06-21 11:00:39,444 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,453 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,458 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目7(String), 1(String), 0(Long), 1561086039449(Long), 0(Long), 1561086039449(Long)
-2019-06-21 11:00:39,572 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,578 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,581 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目8(String), 1(String), 0(Long), 1561086039576(Long), 0(Long), 1561086039576(Long)
-2019-06-21 11:00:39,638 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,642 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,643 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目9(String), 1(String), 0(Long), 1561086039640(Long), 0(Long), 1561086039640(Long)
-2019-06-21 11:00:39,706 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,708 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,709 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目10(String), 1(String), 0(Long), 1561086039707(Long), 0(Long), 1561086039707(Long)
-2019-06-21 11:00:39,783 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,786 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,787 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目11(String), 1(String), 0(Long), 1561086039785(Long), 0(Long), 1561086039785(Long)
-2019-06-21 11:00:39,854 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:39,858 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:39,860 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目12(String), 1(String), 0(Long), 1561086039857(Long), 0(Long), 1561086039857(Long)
-2019-06-21 11:00:40,038 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,043 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,045 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目13(String), 1(String), 0(Long), 1561086040040(Long), 0(Long), 1561086040040(Long)
-2019-06-21 11:00:40,110 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,115 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,118 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目14(String), 1(String), 0(Long), 1561086040113(Long), 0(Long), 1561086040113(Long)
-2019-06-21 11:00:40,187 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,190 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,192 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目15(String), 1(String), 0(Long), 1561086040188(Long), 0(Long), 1561086040188(Long)
-2019-06-21 11:00:40,277 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,286 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,298 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目16(String), 1(String), 0(Long), 1561086040283(Long), 0(Long), 1561086040283(Long)
-2019-06-21 11:00:40,404 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,409 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,410 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目17(String), 1(String), 0(Long), 1561086040406(Long), 0(Long), 1561086040406(Long)
-2019-06-21 11:00:40,514 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,518 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,519 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目18(String), 1(String), 0(Long), 1561086040516(Long), 0(Long), 1561086040516(Long)
-2019-06-21 11:00:40,571 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,574 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,575 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目19(String), 1(String), 0(Long), 1561086040573(Long), 0(Long), 1561086040573(Long)
-2019-06-21 11:00:40,648 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,650 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,651 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目20(String), 1(String), 0(Long), 1561086040649(Long), 0(Long), 1561086040649(Long)
-2019-06-21 11:00:40,705 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,710 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,712 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目21(String), 1(String), 0(Long), 1561086040707(Long), 0(Long), 1561086040707(Long)
-2019-06-21 11:00:40,776 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,787 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,790 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目22(String), 1(String), 0(Long), 1561086040782(Long), 0(Long), 1561086040782(Long)
-2019-06-21 11:00:40,852 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,855 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,856 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目23(String), 1(String), 0(Long), 1561086040854(Long), 0(Long), 1561086040854(Long)
-2019-06-21 11:00:40,948 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:40,952 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_programa ( `name`, `type`, create_by, create_time, update_by, update_time ) VALUES ( ?, ?, ?, ?, ?, ? ) 
-2019-06-21 11:00:40,954 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 栏目24(String), 1(String), 0(Long), 1561086040950(Long), 0(Long), 1561086040950(Long)
-2019-06-21 11:00:41,015 [DEBUG] [main] com.ddc.server.mapper.DDCProgramaMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
-2019-06-21 11:00:41,062 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
-2019-06-21 11:00:41,063 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
-2019-06-21 11:00:41,081 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 08:45:42,870 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 16728 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 08:45:42,875 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 08:45:42,877 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 08:45:47,614 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$1d46d67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:48,167 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$225add2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:48,321 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$b3fdbcf6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:48,605 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:48,876 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:51,288 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:51,444 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$a1db2a60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:45:56,281 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 08:45:58,760 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 08:45:58,774 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 08:45:58,776 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 08:46:00,665 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 08:46:01,780 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 20.86 seconds (JVM running for 25.167)
+2019-06-19 08:46:01,802 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 08:46:01,804 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 08:46:02,745 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 08:46:02,749 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 08:46:02,765 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 08:55:03,586 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 22648 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 08:55:03,591 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 08:55:03,599 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 08:55:09,626 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$3dbae792] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:09,918 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e415759] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:10,002 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$efe43721] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:10,048 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:10,082 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:10,979 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:11,031 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ddc1a48b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:55:14,627 [ERROR] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 875] init datasource error, url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1470)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1533)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:864)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1215)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1211)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:105)
+	at com.baomidou.mybatisplus.toolkit.GlobalConfigUtils.setMetaData(GlobalConfigUtils.java:187)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:560)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:385)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:608)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:147)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6$$FastClassBySpringCGLIB$$45fd8670.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-19 08:55:14,660 [ERROR] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 907] {dataSource-1} init error
+java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1470)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1533)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:864)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1215)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1211)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:105)
+	at com.baomidou.mybatisplus.toolkit.GlobalConfigUtils.setMetaData(GlobalConfigUtils.java:187)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:560)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:385)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:608)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:147)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6$$FastClassBySpringCGLIB$$45fd8670.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-06-19 08:55:14,674 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 08:55:14,679 [WARN] [main] o.s.web.context.support.GenericWebApplicationContext [AbstractApplicationContext.java : 557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DDCAdminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+2019-06-19 08:55:14,726 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 08:55:14,736 [ERROR] [Druid-ConnectionPool-Create-1232424564] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 2336] create connection SQLException, url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1470)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1533)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2333)
+2019-06-19 08:55:14,756 [INFO] [main] o.s.b.a.logging.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java : 142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-19 08:55:14,765 [ERROR] [main] org.springframework.boot.SpringApplication [SpringApplication.java : 858] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DDCAdminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DDCAdminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 40 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	... 72 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 85 common frames omitted
+Caused by: com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at com.baomidou.mybatisplus.toolkit.GlobalConfigUtils.setMetaData(GlobalConfigUtils.java:196)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:560)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:385)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:608)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:147)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6$$FastClassBySpringCGLIB$$45fd8670.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 86 common frames omitted
+2019-06-19 08:55:14,778 [ERROR] [main] org.springframework.test.context.TestContextManager [TestContextManager.java : 250] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6676f6a0] to prepare test instance [com.ddc.server.mapper.DDCPictureMapperTest@609b041c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DDCAdminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DDCAdminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 40 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DDCAdminMapper' defined in file [C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server\target\classes\com\ddc\server\mapper\DDCAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	... 72 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 85 common frames omitted
+Caused by: com.baomidou.mybatisplus.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'mysql'@'localhost' (using password: YES)
+	at com.baomidou.mybatisplus.toolkit.GlobalConfigUtils.setMetaData(GlobalConfigUtils.java:196)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:560)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:385)
+	at com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:608)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:147)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6$$FastClassBySpringCGLIB$$45fd8670.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$abe0f5b6.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 86 common frames omitted
+2019-06-19 08:57:08,721 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 47804 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 08:57:08,726 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 08:57:08,729 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 08:57:12,286 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$880ee59d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:13,035 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8955564] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:13,158 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$3a38352c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:13,222 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:13,275 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:14,292 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:14,389 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$2815a296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 08:57:17,939 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 08:57:24,617 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 08:57:24,638 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 08:57:24,640 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 08:57:27,105 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 08:57:28,776 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 22.112 seconds (JVM running for 25.74)
+2019-06-19 08:57:28,801 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 08:57:28,814 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 08:57:29,925 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 08:57:29,927 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 08:57:29,960 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:18:13,009 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 47916 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:18:13,043 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:18:13,046 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:18:19,565 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$1439f740] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:19,835 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$34c06707] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:19,933 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$c66346cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:19,975 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:20,011 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:21,095 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:21,164 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$b440b439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:18:24,881 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:18:26,891 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:18:26,901 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:18:26,907 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:18:28,651 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:18:29,720 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 19.339 seconds (JVM running for 23.156)
+2019-06-19 09:18:29,740 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:18:29,741 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:18:30,956 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:18:30,959 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:18:30,974 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:24:53,515 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 19904 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:24:53,520 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:24:53,522 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:24:57,634 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$4b0a0bb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:24:57,930 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b907b7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:24:58,026 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$fd335b47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:24:58,072 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:24:58,107 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:24:58,970 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:24:59,047 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$eb10c8b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:25:11,943 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:25:13,252 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:25:13,260 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:25:13,261 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:25:15,084 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:25:16,034 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 24.798 seconds (JVM running for 27.541)
+2019-06-19 09:25:16,075 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:25:16,076 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:25:17,414 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:25:17,415 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:25:17,427 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:28:29,931 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 53412 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:28:29,993 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:28:30,003 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:28:33,801 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$85845e8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:34,088 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a60ace56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:34,173 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$37adae1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:34,228 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:34,272 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:35,164 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:35,224 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$258b1b88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:28:37,992 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:28:39,361 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:28:39,369 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:28:39,370 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:28:40,763 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:28:41,702 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 13.807 seconds (JVM running for 16.963)
+2019-06-19 09:28:41,723 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:28:41,724 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:28:42,500 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 09:28:42,735 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141155814469885954(Long), 现代简约白色餐厅(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560907722225(Long), 0(Long), 0(Long), 1560907722225(Long), 0(Integer)
+2019-06-19 09:28:42,972 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:28:42,975 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:28:42,983 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:30:57,823 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 17028 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:30:57,826 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:30:57,829 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:31:01,948 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$9065506c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:02,197 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0ebc033] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:02,253 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$428e9ffb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:02,282 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:02,310 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:03,086 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:03,134 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$306c0d65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:31:05,653 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:31:07,165 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:31:07,185 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:31:07,187 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:31:08,810 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:31:09,717 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 13.872 seconds (JVM running for 16.859)
+2019-06-19 09:31:09,740 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:31:09,741 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:31:10,644 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 09:31:10,954 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141156435793080322(Long), 现代简约白色餐厅(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560907870274(Long), 0(Long), 0(Long), 1560907870274(Long), 0(Integer)
+2019-06-19 09:31:11,131 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:31:11,133 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:31:11,144 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:43:01,750 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 6628 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:43:01,754 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:43:01,757 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:43:06,432 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$4b0a0bb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:06,650 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b907b7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:06,717 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$fd335b47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:06,752 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:06,781 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:07,590 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:07,635 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$eb10c8b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:43:11,079 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:43:13,006 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:43:13,018 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:43:13,019 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:43:15,495 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:43:16,360 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 16.75 seconds (JVM running for 20.047)
+2019-06-19 09:43:16,376 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:43:16,376 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:43:17,304 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 09:43:17,576 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141159483646963713(Long), 现代简约白色餐厅(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560908596930(Long), 0(Long), 0(Long), 1560908596930(Long), 0(Integer)
+2019-06-19 09:43:17,917 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:43:17,920 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:43:17,936 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:53:40,804 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 56708 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:53:40,809 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:53:40,811 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:53:45,054 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$da1bc19c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:45,385 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$faa23163] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:45,503 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$8c45112b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:45,553 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:45,584 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:46,687 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:46,751 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7a227e95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:53:49,946 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:53:52,072 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:53:52,084 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:53:52,088 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:53:54,138 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:53:55,788 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 17.059 seconds (JVM running for 21.085)
+2019-06-19 09:53:55,928 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:53:55,930 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:53:57,969 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 09:53:58,393 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141162170709499905(Long), 现代简约白色餐厅(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560909237434(Long), 0(Long), 0(Long), 1560909237434(Long), 0(Integer)
+2019-06-19 09:53:58,621 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:53:58,623 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:53:58,633 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:54:07,183 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 37820 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:54:07,187 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:54:07,192 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:54:11,026 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$d13cacb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:11,347 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d9a3a92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:11,464 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$bf3d1a5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:11,506 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:11,537 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:12,721 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:12,776 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ad1a87c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:54:15,670 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:54:17,537 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:54:17,547 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:54:17,549 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:54:19,299 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:54:20,375 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 15.219 seconds (JVM running for 18.869)
+2019-06-19 09:54:20,399 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:54:20,408 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:54:21,683 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 09:54:22,004 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141162270206730241(Long), 现代简约白色餐厅(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560909261111(Long), 0(Long), 0(Long), 1560909261111(Long), 0(Integer)
+2019-06-19 09:54:22,180 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:54:22,183 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:54:22,192 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 09:56:14,043 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 50912 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 09:56:14,046 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 09:56:14,048 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 09:56:17,828 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$5d7eea72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:18,081 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e055a39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:18,163 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$fa83a01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:18,207 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:18,237 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:19,082 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:19,160 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$fd85a76b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 09:56:22,207 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 09:56:23,974 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 09:56:23,987 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 09:56:23,988 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 09:56:25,733 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 09:56:26,867 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 14.797 seconds (JVM running for 18.929)
+2019-06-19 09:56:26,887 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 09:56:26,888 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 09:56:27,917 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 09:56:28,204 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141162799691526146(Long), 现代简约白色餐厅(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560909387552(Long), 0(Long), 0(Long), 1560909387552(Long), 0(Integer)
+2019-06-19 09:56:28,213 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 09:56:28,238 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 09:56:28,240 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 09:56:28,249 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
+2019-06-19 10:36:01,560 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 50] Starting DDCPictureMapperTest on SKY-20180823MGI with PID 30232 (started by Administrator in C:\Users\Administrator\Desktop\课设\ddc-parent\ddc-parent\ddc_server)
+2019-06-19 10:36:01,597 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-19 10:36:01,599 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [SpringApplication.java : 675] No active profile set, falling back to default profiles: default
+2019-06-19 10:36:05,459 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'transactionalConfig' of type [com.ddc.server.config.db.TransactionalConfig$$EnhancerBySpringCGLIB$$985818c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:05,724 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8de8888] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:05,799 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'shiroConfig' of type [com.ddc.server.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$4a816850] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:05,836 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:05,879 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'myRealm' of type [com.ddc.server.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:06,758 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:06,803 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$385ed5ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 10:36:09,998 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 932] {dataSource-1} inited
+2019-06-19 10:36:12,001 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskExecutor'
+2019-06-19 10:36:12,011 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService
+2019-06-19 10:36:12,013 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskAsyncPool'
+2019-06-19 10:36:13,900 [INFO] [main] o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 61] Adding welcome page template: index
+2019-06-19 10:36:15,108 [INFO] [main] com.ddc.server.mapper.DDCPictureMapperTest [StartupInfoLogger.java : 59] Started DDCPictureMapperTest in 15.754 seconds (JVM running for 19.119)
+2019-06-19 10:36:15,133 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 39] @Pass:[Constant.URLInfo(url=/index, className=com.ddc.server.controller.IndexController, pass=true, method=index, methodType=org.springframework.web.bind.annotation.RequestMapping)]
+2019-06-19 10:36:15,134 [INFO] [main] com.ddc.server.config.web.PassUrlScanner [PassUrlScanner.java : 40] @Pass size:1
+2019-06-19 10:36:16,235 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,608 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172817019027458(Long), user0(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911775777(Long), 0(Long), 0(Long), 1560911775777(Long), 0(Integer)
+2019-06-19 10:36:16,620 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,625 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,626 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172818797412353(Long), user1(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776623(Long), 0(Long), 0(Long), 1560911776623(Long), 0(Integer)
+2019-06-19 10:36:16,628 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,631 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,634 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172818814189570(Long), user2(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776629(Long), 0(Long), 0(Long), 1560911776629(Long), 0(Integer)
+2019-06-19 10:36:16,636 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,641 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,646 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172818851938306(Long), user3(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776637(Long), 0(Long), 0(Long), 1560911776637(Long), 0(Integer)
+2019-06-19 10:36:16,649 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,656 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,658 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172818885492738(Long), user4(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776650(Long), 0(Long), 0(Long), 1560911776650(Long), 0(Integer)
+2019-06-19 10:36:16,662 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,669 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,676 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172818981961730(Long), user5(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776664(Long), 0(Long), 0(Long), 1560911776664(Long), 0(Integer)
+2019-06-19 10:36:16,679 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,684 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,686 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819036487681(Long), user6(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776682(Long), 0(Long), 0(Long), 1560911776682(Long), 0(Integer)
+2019-06-19 10:36:16,689 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,692 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,694 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819074236418(Long), user7(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776690(Long), 0(Long), 0(Long), 1560911776690(Long), 0(Integer)
+2019-06-19 10:36:16,698 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,700 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,702 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819107790850(Long), user8(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776698(Long), 0(Long), 0(Long), 1560911776698(Long), 0(Integer)
+2019-06-19 10:36:16,704 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,707 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,708 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819137150978(Long), user9(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776705(Long), 0(Long), 0(Long), 1560911776705(Long), 0(Integer)
+2019-06-19 10:36:16,710 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,714 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,715 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819170705410(Long), user10(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776711(Long), 0(Long), 0(Long), 1560911776711(Long), 0(Integer)
+2019-06-19 10:36:16,716 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,718 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,720 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819179094017(Long), user11(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776717(Long), 0(Long), 0(Long), 1560911776717(Long), 0(Integer)
+2019-06-19 10:36:16,721 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,724 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,725 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819200065537(Long), user12(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776722(Long), 0(Long), 0(Long), 1560911776722(Long), 0(Integer)
+2019-06-19 10:36:16,727 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,729 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,731 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819216842754(Long), user13(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776728(Long), 0(Long), 0(Long), 1560911776728(Long), 0(Integer)
+2019-06-19 10:36:16,732 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,735 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,736 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819254591489(Long), user14(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776734(Long), 0(Long), 0(Long), 1560911776734(Long), 0(Integer)
+2019-06-19 10:36:16,738 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,744 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,751 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819254591490(Long), user15(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776738(Long), 0(Long), 0(Long), 1560911776738(Long), 0(Integer)
+2019-06-19 10:36:16,754 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,757 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,759 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819342671874(Long), user16(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776756(Long), 0(Long), 0(Long), 1560911776756(Long), 0(Integer)
+2019-06-19 10:36:16,761 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,763 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,765 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819372032001(Long), user17(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776762(Long), 0(Long), 0(Long), 1560911776762(Long), 0(Integer)
+2019-06-19 10:36:16,767 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,770 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,771 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819401392130(Long), user18(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776768(Long), 0(Long), 0(Long), 1560911776768(Long), 0(Integer)
+2019-06-19 10:36:16,772 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,775 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==>  Preparing: INSERT INTO ddc_picture ( id, p_name, p_classify, p_ordervalue, p_author, p_tags, p_publishstate, picture, create_time, create_by, update_by, update_time, delete_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-06-19 10:36:16,777 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] ==> Parameters: 1141172819401392131(Long), user19(String), 家居(String), 1(Integer), 洪婉仪(String), 桌椅(String), 1(Integer), (String), 1560911776773(Long), 0(Long), 0(Long), 1560911776773(Long), 0(Integer)
+2019-06-19 10:36:16,780 [DEBUG] [main] com.ddc.server.mapper.DDCPictureMapper.insert [BaseJdbcLogger.java : 159] <==    Updates: 1
+2019-06-19 10:36:16,801 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskAsyncPool'
+2019-06-19 10:36:16,804 [INFO] [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskExecutor'
+2019-06-19 10:36:16,812 [INFO] [Thread-2] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1712] {dataSource-1} closed
