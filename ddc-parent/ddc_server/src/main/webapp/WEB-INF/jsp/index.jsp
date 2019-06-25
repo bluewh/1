@@ -96,7 +96,11 @@
             <dd>
                 <ul>
                     <li><a data-href="article-list.html" data-title="资讯管理" href="javascript:void(0)">资讯管理</a></li>
+<<<<<<< HEAD
                     <li><a data-href="/page/picture-list" data-title="图片管理" href="javascript:void(3)">图片管理</a></li>
+=======
+                    <li><a data-href="picture-list.html" data-title="图片管理" href="javascript:void(0)">图片管理</a></li>
+>>>>>>> c30ba297b685b234c10dc42417b2538194ca872a
                     <li><a data-href="article_column.html" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
                     <li><a data-href="article-category.html" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
 
@@ -125,7 +129,11 @@
                 <ul>
                     <!--<li><a data-href="http://h-ui.duoshuo.com/admin/" data-title="评论列表" href="javascript:;">评论列表</a>-->
                     </li>
+<<<<<<< HEAD
                     <li><a data-href="feedback-list.html" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
+=======
+                    <li><a data-href="feedback-lish.html" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
+>>>>>>> c30ba297b685b234c10dc42417b2538194ca872a
                 </ul>
             </dd>
         </dl>
@@ -133,11 +141,11 @@
             <dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="member-list.html" data-title="会员列表" href="javascript:;">会员列表</a></li>
+                    <li><a data-href="/page/message" data-title="会员列表" href="javascript:;">会员列表</a></li>
                     <!--<li><a data-href="member-del.html" data-title="删除的会员" href="javascript:;">删除的会员</a></li>-->
                     <!--<li><a data-href="member-level.html" data-title="等级管理" href="javascript:;">等级管理</a></li>-->
                     <!--<li><a data-href="member-scoreoperation.html" data-title="积分管理" href="javascript:;">积分管理</a></li>-->
-                    <li><a data-href="member-record-browse.html" data-title="浏览记录" href="javascript:void(0)">浏览记录</a>
+                    <li><a data-href="/page/member-record-browse" data-title="浏览记录" href="javascript:void(0)">浏览记录</a>
                     </li>
                     <!--<li><a data-href="member-record-download.html" data-title="下载记录" href="javascript:void(0)">下载记录</a>-->
                     <!--</li>-->
